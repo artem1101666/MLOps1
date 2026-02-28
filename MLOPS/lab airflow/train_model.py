@@ -100,3 +100,4 @@ def train():
         )
 
         joblib.dump(best, "lr_universities.pkl")
+        mlflow.log_artifact("lr_universities.pkl")
